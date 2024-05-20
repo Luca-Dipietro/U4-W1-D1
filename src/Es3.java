@@ -20,6 +20,15 @@ public class Es3 {
             System.out.println("Il numero è dispari");
         }
 
+        System.out.print("Inserisci il primo lato del triangolo: ");
+        double lato1Triangolo = sc.nextDouble();
+        System.out.print("Inserisci il secondo lato del triangolo: ");
+        double lato2Triangolo = sc.nextDouble();
+        System.out.print("Inserisci il terzo lato del triangolo: ");
+        double lato3Triangolo = sc.nextDouble();
+        double areaTriangolo = perimetroTriangolo(lato1Triangolo, lato2Triangolo, lato3Triangolo);
+        System.out.println("L'area del triangolo è: " + areaTriangolo);
+
         sc.close();
     }
 
@@ -31,5 +40,8 @@ public class Es3 {
         return numero % 2 == 0 ? 0 : 1;
     }
 
-
+    public static double perimetroTriangolo(double lato1, double lato2, double lato3) {
+        double semiPerimetro = (lato1 + lato2 + lato3) / 2;
+        return Math.sqrt(semiPerimetro * (semiPerimetro - lato1) * (semiPerimetro - lato2) * (semiPerimetro - lato3));
+    }
 }

@@ -13,10 +13,10 @@ public class Es2 {
         System.out.print("Inserisci la terza stringa: ");
         String thirdString = sc.nextLine();
 
-        String inOrder = firstString + secondString + thirdString;
+        String inOrder = firstString +" "+ secondString +" "+ thirdString;
         System.out.println("Ordine di inserimento: " + inOrder);
 
-        String concatenationReverseOrder = thirdString + secondString + firstString;
+        String concatenationReverseOrder = thirdString+" "+ secondString+" "+ firstString;
         System.out.println("Ordine inverso: " + concatenationReverseOrder);
 
         sc.close();

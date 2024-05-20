@@ -18,6 +18,7 @@ public class Es2 {
 
         String concatenationReverseOrder = thirdString + secondString + firstString;
         System.out.println("Ordine inverso: " + concatenationReverseOrder);
+
         sc.close();
     }
 }
